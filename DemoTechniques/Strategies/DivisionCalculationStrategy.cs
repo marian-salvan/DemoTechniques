@@ -2,7 +2,7 @@
 {
     public class DivisionCalculationStrategy : ICalculationStrategy
     {
-        public CalculationType CalculationType => CalculationType.DIVISION;
+        public OperationType OperationType => OperationType.DIVISION;
         public double Calculate(double a, double b)
         {
             if (b == 0)

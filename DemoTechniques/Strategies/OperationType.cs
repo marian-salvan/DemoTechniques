@@ -1,6 +1,6 @@
 ﻿namespace DemoTechniques.Strategies
 {
-    public enum CalculationType
+    public enum OperationType
     {
         ADDITION,
         SUBSTRACTION,

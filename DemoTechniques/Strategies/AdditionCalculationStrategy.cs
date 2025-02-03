@@ -2,7 +2,7 @@
 {
     public class AdditionCalculationStrategy : ICalculationStrategy
     {
-        public CalculationType CalculationType => CalculationType.SUBSTRACTION;
+        public OperationType OperationType => OperationType.ADDITION;
 
         public double Calculate(double a, double b) => a + b;
     }

@@ -2,7 +2,7 @@
 {
     public class MultiplicationCalculationStrategy : ICalculationStrategy
     {
-        public CalculationType CalculationType => CalculationType.MULTIPLICATION;
+        public OperationType OperationType => OperationType.MULTIPLICATION;
 
         public double Calculate(double a, double b) => a * b;
     }

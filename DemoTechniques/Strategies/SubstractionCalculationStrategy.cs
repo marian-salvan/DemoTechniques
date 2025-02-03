@@ -2,7 +2,7 @@
 {
     public class SubstractionCalculationStrategy : ICalculationStrategy
     {
-        public CalculationType CalculationType => CalculationType.SUBSTRACTION;
+        public OperationType OperationType => OperationType.SUBSTRACTION;
 
         public double Calculate(double a, double b) => a - b;
     }

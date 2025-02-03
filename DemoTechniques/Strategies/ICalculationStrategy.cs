@@ -2,7 +2,7 @@
 {
     public interface ICalculationStrategy
     {
-        public CalculationType CalculationType { get; }
+        public OperationType OperationType { get; }
         public double Calculate(double a, double b);
     }
 }

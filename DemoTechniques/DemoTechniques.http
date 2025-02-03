@@ -1,6 +1,7 @@
 @DemoTechniques_HostAddress = http://localhost:5251
 
-GET {{DemoTechniques_HostAddress}}/weatherforecast/
+GET {{DemoTechniques_HostAddress}}/calculate?a=10&b=5&op=MULTIPLICATION
 Accept: application/json
+
 
 ###
