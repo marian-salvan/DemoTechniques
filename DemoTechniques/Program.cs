@@ -60,14 +60,14 @@ app.MapGet("/calculate", ([FromQuery] double a, [FromQuery] double b, [FromQuery
             return Results.BadRequest("Invalid operation");
         }
 
-        var strategiesDict = calculationStrategies.ToDictionary(s => s.OperationType);
+        var calculationStrategy = calculationStrategies.FirstOrDefault(s => s.OperationType == operationType);
 
-        if (!strategiesDict.TryGetValue(operationType, out var strategy))
+        if (calculationStrategy is null)
         {
             return Results.BadRequest("Invalid operation type");
         }
 
-        return Results.Ok(strategy.Calculate(a, b));
+        return Results.Ok(calculationStrategy.Calculate(a, b));
     }
     catch (Exception)
     {
